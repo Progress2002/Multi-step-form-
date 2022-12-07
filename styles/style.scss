@@ -1,0 +1,59 @@
+
+// Marine blue: hsl(213, 96%, 18%)
+// - Purplish blue: hsl(243, 100%, 62%)
+// - Pastel blue: hsl(228, 100%, 84%)
+// - Light blue: hsl(206, 94%, 87%)
+// - Strawberry red: hsl(354, 84%, 57%)
+
+// - Cool gray: hsl(231, 11%, 63%)
+// - Light gray: hsl(229, 24%, 87%)
+// - Magnolia: hsl(217, 100%, 97%)
+// - Alabaster: hsl(231, 100%, 99%)
+// - White: hsl(0, 0%, 100%)
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#sidebar {
+  background-image: url(../images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170px;
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navigation-items {
+      margin-top: 30px;
+      color: #fff;
+      
+      .step-index {
+        border: 1px solid hsl(229, 24%, 87%);
+        padding: 10px 15px;
+        margin-right: 18px;
+        border-radius: 100%;
+        // color: #fff;
+        font-weight: 700;
+      }
+    }
+
+    .description {
+      display: none;
+    }
+  }
+}
+
+.active {
+  background-color:  hsl(206, 94%, 87%);
+  color: black;
+}

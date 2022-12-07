@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#sidebar {
+  background-image: url(../images/bg-sidebar-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170px;
+}
+
+#sidebar .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sidebar .navigation .navigation-items {
+  margin-top: 30px;
+  color: #fff;
+}
+
+#sidebar .navigation .navigation-items .step-index {
+  border: 1px solid #d6d9e6;
+  padding: 10px 15px;
+  margin-right: 18px;
+  border-radius: 100%;
+  font-weight: 700;
+}
+
+#sidebar .navigation .description {
+  display: none;
+}
+
+.active {
+  background-color: #bfe2fd;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
