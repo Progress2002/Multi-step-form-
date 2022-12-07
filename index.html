@@ -36,119 +36,202 @@
         <li class="navigation-items step-3">
           <div class="step-index index-3">3</div>
           <div class="description">
-            <span>S</span>
-            <p></p>
+            <span>STEP 3</span>
+            <p>ADD-ONS</p>
           </div>
         </li>
         <li class="navigation-items step-4">
-          <div class="step-index index-4"></div>
+          <div class="step-index index-4">4</div>
           <div class="description">
-            <span></span>
-            <p></p>
+            <span>STE 4</span>
+            <p>SUMMARY</p>
           </div>
         </li>
       </ul>
     </aside>
-
-  Step 1
-  Your info
-
-  Step 2
-  Select plan
-
-  Step 3
-  Add-ons
-
-  Step 4
-  Summary
-
   <!-- Sidebar end -->
 
-  <!-- Step 1 start -->
+  <!-- main container -->
+    <main id="main">
+      <div class="main-body">
+         <!-- Step 1 start -->
+         <div id="page-1" class="steps">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form action="">
+            <!-- name input start -->
+            <label for="text">Name</label>
+            <input type="text" name="text" id="text" autocomplete="off" spellcheck="off" placeholder="e.g. Stephen King">
+            <!-- name input end -->
 
-  Personal info
-  Please provide your name, email address, and phone number.
+            <!-- email input start -->
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" autocomplete="off" spellcheck="off" placeholder="e.g. stephenking@lorem.com">
+            <!-- email input end -->
 
-  Name
-  e.g. Stephen King
+            <!-- number input start -->
+            <label for="number">Email Address</label>
+            <input type="number" name="number" id="number" autocomplete="off" spellcheck="off" placeholder="e.g. stephenking@lorem.com">
+            <!-- number input end -->
+          </form>
+         </div>
+         <!-- Step 1 end -->
 
-  Email Address
-  e.g. stephenking@lorem.com
+         <!-- Step 2 start -->
+         <div id="page-2" class="steps">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+          <!-- plan container start -->
+          <ul id="plan-container">
+            <li class="plan" id="plan-1">
+              <div class="image">
+                <img src="./images/icon-arcade.svg" alt="">
+              </div>
+              <div class="body">
+                <p class="plan-type">Arcade</p>
+                <p class="plan-amount">$9/mo</p>
+                <p class="plan-bonus">2 months free</p>
+              </div>
+            </li>
+            <li class="plan" id="plan-2">
+              <div class="image">
+                <img src="./images/icon-advanced.svg" alt="">
+              </div>
+              <div class="body">
+                <p class="plan-type">Advanced</p>
+                <p class="plan-amount">$12/mo</p>
+                <p class="plan-bonus">2 months free</p>
+              </div>
+            </li>
+            <li class="plan" id="plan-3">
+              <div class="image">
+                <img src="./images/icon-pro.svg" alt="">
+              </div>
+              <div class="body">
+                <p class="plan-type">Pro</p>
+                <p class="plan-amount">$15/mo</p>
+                <p class="plan-bonus">2 months free</p>
+              </div>
+            </li>
+           </ul>
+           <!-- plan container end -->
 
-  Phone Number
-  e.g. +1 234 567 890
+           <!-- duration btn  start -->
+           <div class="duration-selection"></div>
+           <!-- duration btn  end -->
+         </div>
+         <!-- Step 2 end -->
 
-  Next Step
+         <!-- Step 3 start -->
+         <div id="page-3" class="steps">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+          <ul class="add-ons-list">
+            <li class="item" id="service">
+              <div class="details">
+                <input type="checkbox">
+                <div class="body">
+                  <span>Online service</span>
+                  <p>Access to multiplayer games</p>
+                </div>
+              </div>
+              <div>
+                <p class="amount">
+                  +$1/<span>mo</span>
+                </p>
+              </div>
+            </li>
+            <li class="item" id="storage">
+              <div class="details">
+                <input type="checkbox">
+                <div class="body">
+                  <span>Larger storage</span>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+              </div>
+              <div>
+                <p class="amount">
+                  +$2/<span>mo</span>
+                </p>
+              </div>
+            </li>
+            <li class="item" id="profile">
+              <div class="details">
+                <input type="checkbox">
+                <div class="body">
+                  <span>Customizable profile</span>
+                  <p>custom theme on your profile</p>
+                </div>
+              </div>
+              <div>
+                <p class="amount">
+                  +$2/<span>mo</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+         </div>
+         <!-- Step 3 end -->
 
-  <!-- Step 1 end -->
+         <!-- Step 4 start -->
+         <div id="page-4" class="steps">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+          <div class="selection-container">
+            <div class="selection-1">
+              <div class="section-1">
+                <p>Arcade<span>(Yearly)</span></p>
+                <a href="#">Change</a>
+              </div>
+            </div>
+            <div>
+              <p class="amount">
+                $9/<span>mo</span>
+              </p>
+            </div>
+            </div>
 
-  <!-- Step 2 start -->
+            <hr>
 
-  Select your plan
-  You have the option of monthly or yearly billing.
+            <ul class="extra-services">
+              <li>
+                <p>Online service</p>
+                <p class="amount">
+                  +$9/<span>mo</span>
+                </p>
+              </li>
+            </ul>
+            <div class="total">
+              <p>Total<span>(per month)</span></p>
+              <p class="amount">
+                +$12/<span>mo</span>
+              </p>
+            </div>
+         </div>
+         <!-- Step 4 end -->
+      </div>
 
-  Arcade
-  $9/mo
+      <!-- action buttons -->
+      <div class="main-footer">
+        <div class="back"><a href="#1">Go Back</a></div>
+        <div class="next"><a href="#2">Next Step</a></div>
+        <div class="next"><a href="#2">Confirm</a></div>
+      </div>
 
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Pick add-ons
-  Add-ons help enhance your gaming experience.
-
-  Online service
-  Access to multiplayer games
-  +$1/mo
-
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
-
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
-
-  Go Back
-  Next Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
-  Double-check everything looks OK before confirming.
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year)
-
-  Go Back
-  Confirm
-
-  <!-- Step 4 end -->
-
-  <!-- Step 5 start -->
-
-  Thank you!
-
-  Thanks for confirming your subscription! We hope you have fun 
-  using our platform. If you ever need support, please feel free 
-  to email us at support@loremgaming.com.
-
-  <!-- Step 5 end -->
+      <!-- Step 5 start -->
+      <div id="thanks-page">
+        <div class="image">
+          <img src="./images/icon-thank-you.svg" alt="image-completed" srcset="">
+        </div>
+        <h1>Thank you</h1>
+        <p>
+          Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.
+        </p>
+      </div>
+      <!-- Step 5 end -->
+    </main>
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
