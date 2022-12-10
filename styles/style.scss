@@ -1,4 +1,3 @@
-
 // Marine blue: hsl(213, 96%, 18%)
 // - Purplish blue: hsl(243, 100%, 62%)
 // - Pastel blue: hsl(228, 100%, 84%)
@@ -15,11 +14,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 100%, 97%);
+  height: 100vh;
 }
 
 ul {
   list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 #sidebar {
@@ -27,7 +40,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   height: 170px;
-  
+
   .navigation {
     display: flex;
     align-items: center;
@@ -36,13 +49,12 @@ ul {
     .navigation-items {
       margin-top: 30px;
       color: #fff;
-      
+
       .step-index {
         border: 1px solid hsl(229, 24%, 87%);
         padding: 10px 15px;
         margin-right: 18px;
         border-radius: 100%;
-        // color: #fff;
         font-weight: 700;
       }
     }
@@ -54,6 +66,336 @@ ul {
 }
 
 .active {
-  background-color:  hsl(206, 94%, 87%);
+  background-color: hsl(206, 94%, 87%);
   color: black;
+}
+
+#main {
+  .steps {
+    background-color: hsl(0, 0%, 100%);
+    width: 92%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    bottom: 60px;
+    border-radius: 10px;
+
+    h1 {
+      margin: 8px 0 14px;
+      color: hsl(213, 96%, 18%);
+    }
+
+    p {
+      line-height: 1.5;
+      color: hsl(231, 11%, 63%);
+      margin-bottom: 20px;
+    }
+
+    // step-1 form section start
+    form {
+      .label {
+        color: hsl(213, 96%, 18%);
+        font-weight: 500;
+        font-size: 16px;
+        display: block;
+      }
+
+      small {
+        color: hsl(354, 84%, 57%);
+        display: block;
+      }
+
+      input {
+        display: block;
+        margin: 5px 0 18px;
+        width: 100%;
+        padding: 10px 17px;
+        font-size: 16px;
+        font-weight: 500;
+        color: hsl(213, 96%, 18%);
+        border: 1px solid hsl(229, 24%, 87%);
+        border-radius: 5px;
+        outline: none;
+
+        .invalid-input {
+          border: 1px solid hsl(354, 84%, 57%);
+        }
+      }
+
+      input:hover {
+        border: 1px solid hsl(243, 100%, 62%);
+      }
+
+      input[type="number"] {
+        margin-bottom: 0;
+      }
+    }
+    // step-1 form section end
+
+    // step-2 add-ons start
+    #plan-container {
+      .checked.plan {
+        background-color: hsl(217, 100%, 97%);
+        border: 2px solid hsl(243, 100%, 62%);
+      }
+
+      .plan {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 1px solid hsl(229, 24%, 87%);
+
+        img {
+          width: 55px;
+          margin-right: 20px;
+        }
+
+        p {
+          margin: 0;
+          line-height: 1.3;
+        }
+
+        .plan-type {
+          color: hsl(213, 96%, 18%);
+          font-weight: 500;
+          font-size: 20px;
+        }
+
+        .plan-bonus {
+          font-size: 15px;
+          color: hsl(213, 96%, 18%);
+          font-weight: 500;
+        }
+
+      }
+    }
+
+    .duration-selection {
+      background-color: hsl(217, 100%, 97%);
+      justify-content: center;
+      padding: 20px 10px 0;
+      border-radius: 10px;
+      font-size: 20px;
+      margin-top: 20px;
+      
+
+      p {
+        display: block;
+        font-weight: 700;
+      }
+      
+      .selected {
+        font-weight: 700;
+        color: hsl(213, 96%, 18%);
+      }
+
+      .plan-selector {
+        margin: 0 15px;
+        display: inline;
+        padding-bottom: 0;
+
+        .toggle {
+          position: relative;
+          width: 60px;
+          height: 30px;
+          background: hsl(213, 96%, 18%);
+          border-radius: 30px;
+          transition: 0.6s;
+          cursor: pointer;
+
+          .toggle-btn {
+            position: relative;
+            top: 5px;
+            width: 20px;
+            margin: 0 7px;
+            height: 20px;
+            background: hsl(217, 100%, 97%);;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.6s;
+          }
+        }
+
+        .toggle.year-plan .toggle-btn {
+          left: 27px;
+        } 
+        
+      }
+    }
+    // step-2 add-ons end
+
+    // step-3 add-ons start
+    .add-ons-list {
+      .checked.item {
+        background-color: hsl(217, 100%, 97%);
+        border: 2px solid hsl(243, 100%, 62%);
+      }
+
+      .item {
+        border: 1px solid hsl(229, 24%, 87%);
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+        .details {
+          display: flex;
+          align-items: center;
+        }
+
+        .body {
+          span {
+            font-size: 18px;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: hsl(213, 96%, 18%);
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+
+        input[type="checkbox"] {
+          margin-right: 10px;
+          width: 25px;
+          height: 20px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1;
+        }
+
+        .amount {
+          margin-top: 20px;
+          color: hsl(243, 40%, 56%);
+          font-weight: 500;
+        }
+      }
+    }
+    // step-3 add-ons end
+
+    // step-4 add-ons start
+    .finishing-up {
+      background-color: hsl(217, 100%, 97%);
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 10px;
+
+      p {
+        font-size: 19px;
+      }
+
+      .amount {
+        color: hsl(213, 96%, 18%);
+      }
+
+      .selection-container {
+        .section-1 {
+          margin-bottom: 15px;
+
+          p {
+            margin: 0;
+            color: hsl(213, 96%, 18%);
+            font-weight: 700;
+          }
+
+          a {
+            color: hsl(231, 11%, 63%);
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 2px solid hsl(213, 96%, 18%);
+          }
+
+          a:hover {
+            color: hsl(243, 100%, 62%);
+            border-bottom: 2px solid hsl(243, 100%, 62%);
+          }
+        }
+
+        .amount {
+          font-weight: 700;
+        }
+      }
+
+      .extra-services {
+        margin-top: 10px;
+      }
+    }
+
+    .total {
+      padding: 10px 20px 0;
+
+      .amount {
+        color: hsl(243, 100%, 62%);
+        font-weight: 700;
+      }
+    }
+    // step-4 add-ons end
+  }
+
+  // step-5 add-ons start
+  #thanks-page {
+    text-align: center;
+    padding: 80px 20px 50px;
+
+    img {
+      width: 70px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .main-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding: 15px;
+
+    .btn {
+      border: none;
+      background-color: inherit;
+      font-weight: 600;
+      font-size: 14px;
+      color: hsl(231, 11%, 63%);
+      cursor: pointer;
+    }
+
+    .next {
+      background-color: hsl(213, 96%, 18%);
+      border-radius: 5px;
+
+      .btn {
+        color: hsl(229, 24%, 87%);
+        padding: 12px 15px;
+        border-radius: 5px;
+      }
+    }
+
+    .confirm {
+      background-color: hsl(243, 100%, 62%);
+      border-radius: 5px;
+
+      .btn {
+        color: hsl(229, 24%, 87%);
+        padding: 12px 20px;
+        border-radius: 5px;
+      }
+    }
+
+    .confirm:hover {
+      background-color: hsla(243, 100%, 62%, 0.445);
+    }
+  }
+}
+
+
+.disable {
+  display: none;
 }

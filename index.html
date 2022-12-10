@@ -11,7 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Multi-step form</title>
     <link rel="stylesheet" href="./styles/style.css" />
@@ -29,7 +34,7 @@
             </div>
           </li>
           <li class="navigation-items step-2">
-            <div class="step-index index-2">2</div>
+            <div class="step-index index-2 active">2</div>
             <div class="description">
               <span>STEP 2</span>
               <p>SELECT PLAN</p>
@@ -57,12 +62,15 @@
       <main id="main">
         <div class="main-body">
           <!-- Step 1 start -->
-          <div id="page-1" class="steps">
+          <div id="page-1" class="steps disable">
             <h1>Personal info</h1>
             <p>Please provide your name, email address, and phone number.</p>
             <form action="">
               <!-- name input start -->
-              <label for="text">Name</label>
+              <div class="flex">
+                <label class="label" for="text">Name</label>
+                <small class="name-error"></small>
+              </div>
               <input
                 type="text"
                 name="text"
@@ -74,7 +82,10 @@
               <!-- name input end -->
 
               <!-- email input start -->
-              <label for="email">Email Address</label>
+              <div class="flex">
+                <label class="label" for="email">Email Address</label>
+                <small class="email-error"></small>
+              </div>
               <input
                 type="email"
                 name="email"
@@ -82,11 +93,15 @@
                 autocomplete="off"
                 spellcheck="off"
                 placeholder="e.g. stephenking@lorem.com"
+                class="invalid-input"
               />
               <!-- email input end -->
 
               <!-- number input start -->
-              <label for="number">Email Address</label>
+              <div class="flex">
+                <label class="label" for="number">Phone Number</label>
+                <small class="number-error"></small>
+              </div>
               <input
                 type="number"
                 name="number"
@@ -101,7 +116,7 @@
           <!-- Step 1 end -->
 
           <!-- Step 2 start -->
-          <div id="page-2" class="steps">
+          <div id="page-2" class="steps ">
             <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
             <!-- plan container start -->
@@ -112,8 +127,8 @@
                 </div>
                 <div class="body">
                   <p class="plan-type">Arcade</p>
-                  <p class="plan-amount">$9/mo</p>
-                  <p class="plan-bonus">2 months free</p>
+                  <p class="arcade-plan-amount">$9/mo</p>
+                  <p class="plan-bonus disable">2 months free</p>
                 </div>
               </li>
               <li class="plan" id="plan-2">
@@ -122,8 +137,8 @@
                 </div>
                 <div class="body">
                   <p class="plan-type">Advanced</p>
-                  <p class="plan-amount">$12/mo</p>
-                  <p class="plan-bonus">2 months free</p>
+                  <p class="advanced-plan-amount">$12/mo</p>
+                  <p class="plan-bonus disable">2 months free</p>
                 </div>
               </li>
               <li class="plan" id="plan-3">
@@ -132,25 +147,35 @@
                 </div>
                 <div class="body">
                   <p class="plan-type">Pro</p>
-                  <p class="plan-amount">$15/mo</p>
-                  <p class="plan-bonus">2 months free</p>
+                  <p class="pro-plan-amount">$15/mo</p>
+                  <p class="plan-bonus disable">2 months free</p>
                 </div>
               </li>
             </ul>
             <!-- plan container end -->
 
             <!-- duration btn  start -->
-            <div class="duration-selection"></div>
+            <div class="duration-selection flex">
+              <p id="monthly" class="selected plan">Monthly</p>
+              <div class="plan-selector">
+                <div class="container">
+                  <div class="toggle">
+                    <div class="toggle-btn"></div>
+                  </div>
+                </div>
+              </div>
+              <p id="yearly" class="plan">Yearly</p>
+            </div>
             <!-- duration btn  end -->
           </div>
           <!-- Step 2 end -->
 
           <!-- Step 3 start -->
-          <div id="page-3" class="steps">
+          <div id="page-3" class="steps disable">
             <h1>Pick add-ons</h1>
             <p>Add-ons help enhance your gaming experience.</p>
             <ul class="add-ons-list">
-              <li class="item" id="service">
+              <li class="item flex" id="service">
                 <div class="details">
                   <input type="checkbox" />
                   <div class="body">
@@ -159,10 +184,10 @@
                   </div>
                 </div>
                 <div>
-                  <p class="amount">+$1/<span>mo</span></p>
+                  <p class="amount online-amount">+$1/<span>mo</span></p>
                 </div>
               </li>
-              <li class="item" id="storage">
+              <li class="item flex" id="storage">
                 <div class="details">
                   <input type="checkbox" />
                   <div class="body">
@@ -171,10 +196,10 @@
                   </div>
                 </div>
                 <div>
-                  <p class="amount">+$2/<span>mo</span></p>
+                  <p class="amount storage-amount">+$2/<span>mo</span></p>
                 </div>
               </li>
-              <li class="item" id="profile">
+              <li class="item flex" id="profile">
                 <div class="details">
                   <input type="checkbox" />
                   <div class="body">
@@ -183,7 +208,7 @@
                   </div>
                 </div>
                 <div>
-                  <p class="amount">+$2/<span>mo</span></p>
+                  <p class="amount profile-amount">+$2/<span>mo</span></p>
                 </div>
               </li>
             </ul>
@@ -191,52 +216,47 @@
           <!-- Step 3 end -->
 
           <!-- Step 4 start -->
-          <div id="page-4" class="steps">
+          <div id="page-4" class="steps disable">
             <h1>Finishing up</h1>
             <p>Double-check everything looks OK before confirming.</p>
-            <div class="selection-container">
-              <div class="selection-1">
-                <div class="section-1">
-                  <p>Arcade<span>(Yearly)</span></p>
-                  <a href="#">Change</a>
+            <div class="finishing-up">
+              <div class="selection-container flex">
+                <div class="selection-1">
+                  <div class="section-1">
+                    <p>Arcade<span>(Yearly)</span></p>
+                    <a href="#">Change</a>
+                  </div>
+                </div>
+                <div>
+                  <p class="amount">$9/mo</p>
                 </div>
               </div>
-              <div>
-                <p class="amount">$9/<span>mo</span></p>
-              </div>
+
+              <hr />
+
+              <ul class="extra-services">
+                <li class="flex list">
+                  <p>Online service</p>
+                  <p class="amount">+$1/mo</p>
+                </li>
+                <li class="flex list">
+                  <p>Online service</p>
+                  <p class="amount">+$1/mo</p>
+                </li>
+              </ul>
             </div>
-
-            <hr />
-
-            <ul class="extra-services">
-              <li>
-                <p>Online service</p>
-                <p class="amount">+$9/<span>mo</span></p>
-              </li>
-            </ul>
-            <div class="total">
-              <p>Total<span>(per month)</span></p>
-              <p class="amount">+$12/<span>mo</span></p>
+            <div class="total flex">
+              <p>Total<span class="total-duration"> (per month)</span></p>
+              <p class="amount">+$12/mo</p>
             </div>
           </div>
           <!-- Step 4 end -->
         </div>
 
-        <!-- action buttons -->
-        <div class="main-footer">
-          <div class="back"><a href="#1">Go Back</a></div>
-          <div class="next"><a href="#2">Next Step</a></div>
-          <div class="next"><a href="#2">Confirm</a></div>
-        </div>
-
         <!-- Step 5 start -->
-        <div id="thanks-page">
+        <div id="thanks-page" class="steps disable">
           <div class="image">
-            <img
-              src="./images/icon-thank-you.svg"
-              alt="image-completed"
-              srcset=""
-            />
+            <img src="./images/icon-thank-you.svg" alt="image-completed" />
           </div>
           <h1>Thank you</h1>
           <p>
@@ -246,6 +266,19 @@
           </p>
         </div>
         <!-- Step 5 end -->
+
+        <!-- action buttons -->
+        <div class="main-footer flex">
+          <div class="back"><button class="btn">Go Back</button></div>
+          <div>
+            <div class="next">
+              <button class="btn btn-next">Next Step</button>
+            </div>
+            <div class="confirm">
+              <button class="btn btn-confirm disable">Confirm</button>
+            </div>
+          </div>
+        </div>
       </main>
 
       <!-- <div class="attribution">
@@ -253,5 +286,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
     </div>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
