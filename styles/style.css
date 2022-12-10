@@ -75,7 +75,7 @@ p {
   margin: auto;
   padding: 20px;
   position: relative;
-  bottom: 60px;
+  bottom: 70px;
   border-radius: 10px;
 }
 
@@ -167,6 +167,11 @@ p {
   font-weight: 500;
 }
 
+#main .steps #plan-container .plan:hover {
+  border: 2px solid #473dff;
+  cursor: pointer;
+}
+
 #main .steps .duration-selection {
   background-color: #f0f6ff;
   -webkit-box-pack: center;
@@ -224,7 +229,7 @@ p {
 
 #main .steps .add-ons-list .checked.item {
   background-color: #f0f6ff;
-  border: 2px solid #473dff;
+  border: 1px solid #473dff;
 }
 
 #main .steps .add-ons-list .item {
@@ -262,6 +267,7 @@ p {
   margin-right: 10px;
   width: 25px;
   height: 20px;
+  cursor: pointer;
 }
 
 #main .steps .add-ons-list .item p {
@@ -273,6 +279,11 @@ p {
   margin-top: 20px;
   color: #6662bc;
   font-weight: 500;
+}
+
+#main .steps .add-ons-list .item:hover {
+  border: 1px solid #473dff;
+  cursor: pointer;
 }
 
 #main .steps .finishing-up {

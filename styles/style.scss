@@ -77,7 +77,7 @@ p {
     margin: auto;
     padding: 20px;
     position: relative;
-    bottom: 60px;
+    bottom: 70px;
     border-radius: 10px;
 
     h1 {
@@ -170,6 +170,11 @@ p {
         }
 
       }
+
+      .plan:hover {
+        border: 2px solid hsl(243, 100%, 62%);
+        cursor: pointer;
+      }
     }
 
     .duration-selection {
@@ -230,7 +235,7 @@ p {
     .add-ons-list {
       .checked.item {
         background-color: hsl(217, 100%, 97%);
-        border: 2px solid hsl(243, 100%, 62%);
+        border: 1px solid hsl(243, 100%, 62%);
       }
 
       .item {
@@ -263,6 +268,7 @@ p {
           margin-right: 10px;
           width: 25px;
           height: 20px;
+          cursor: pointer;
         }
 
         p {
@@ -275,6 +281,11 @@ p {
           color: hsl(243, 40%, 56%);
           font-weight: 500;
         }
+      }
+
+      .item:hover {
+        border: 1px solid hsl(243, 100%, 62%);
+        cursor: pointer;
       }
     }
     // step-3 add-ons end

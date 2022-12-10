@@ -27,14 +27,14 @@
       <aside id="sidebar">
         <ul class="navigation">
           <li class="navigation-items step-1">
-            <div class="step-index index-1">1</div>
+            <div class="step-index index-1 active">1</div>
             <div class="description">
               <span>STEP 1</span>
               <p>YOUR INFO</p>
             </div>
           </li>
           <li class="navigation-items step-2">
-            <div class="step-index index-2 active">2</div>
+            <div class="step-index index-2">2</div>
             <div class="description">
               <span>STEP 2</span>
               <p>SELECT PLAN</p>
@@ -62,7 +62,7 @@
       <main id="main">
         <div class="main-body">
           <!-- Step 1 start -->
-          <div id="page-1" class="steps disable">
+          <div id="page-1" class="steps">
             <h1>Personal info</h1>
             <p>Please provide your name, email address, and phone number.</p>
             <form action="">
@@ -116,7 +116,7 @@
           <!-- Step 1 end -->
 
           <!-- Step 2 start -->
-          <div id="page-2" class="steps ">
+          <div id="page-2" class="steps disable">
             <h1>Select your plan</h1>
             <p>You have the option of monthly or yearly billing.</p>
             <!-- plan container start -->
@@ -184,7 +184,7 @@
                   </div>
                 </div>
                 <div>
-                  <p class="amount online-amount">+$1/<span>mo</span></p>
+                  <p class="amount online-amount">+$1/mo</p>
                 </div>
               </li>
               <li class="item flex" id="storage">
@@ -196,7 +196,7 @@
                   </div>
                 </div>
                 <div>
-                  <p class="amount storage-amount">+$2/<span>mo</span></p>
+                  <p class="amount storage-amount">+$2/mo</p>
                 </div>
               </li>
               <li class="item flex" id="profile">
@@ -208,7 +208,7 @@
                   </div>
                 </div>
                 <div>
-                  <p class="amount profile-amount">+$2/<span>mo</span></p>
+                  <p class="amount profile-amount">+$2/mo</p>
                 </div>
               </li>
             </ul>
@@ -269,13 +269,13 @@
 
         <!-- action buttons -->
         <div class="main-footer flex">
-          <div class="back"><button class="btn">Go Back</button></div>
+          <div class="back"><button class="btn btn-back disable">Go Back</button></div>
           <div>
             <div class="next">
               <button class="btn btn-next">Next Step</button>
             </div>
             <div class="confirm">
-              <button class="btn btn-confirm disable">Confirm</button>
+              <button class="btn  btn-confirm disable">Confirm</button>
             </div>
           </div>
         </div>
