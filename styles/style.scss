@@ -105,6 +105,10 @@ p {
         display: block;
       }
 
+      input.error {
+        border: 1px solid hsl(354, 84%, 57%);
+      }
+
       input {
         display: block;
         margin: 5px 0 18px;
@@ -117,10 +121,8 @@ p {
         border-radius: 5px;
         outline: none;
 
-        .invalid-input {
-          border: 1px solid hsl(354, 84%, 57%);
-        }
       }
+
 
       input:hover {
         border: 1px solid hsl(243, 100%, 62%);

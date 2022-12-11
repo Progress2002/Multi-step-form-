@@ -102,6 +102,10 @@ p {
   display: block;
 }
 
+#main .steps form input.error {
+  border: 1px solid #ed3548;
+}
+
 #main .steps form input {
   display: block;
   margin: 5px 0 18px;
@@ -113,10 +117,6 @@ p {
   border: 1px solid #d6d9e6;
   border-radius: 5px;
   outline: none;
-}
-
-#main .steps form input .invalid-input {
-  border: 1px solid #ed3548;
 }
 
 #main .steps form input:hover {
