@@ -121,9 +121,7 @@ p {
         border-radius: 5px;
         outline: none;
         cursor: pointer;
-
       }
-
 
       input:hover {
         border: 1px solid hsl(243, 100%, 62%);
@@ -171,7 +169,6 @@ p {
           color: hsl(213, 96%, 18%);
           font-weight: 500;
         }
-
       }
 
       .plan:hover {
@@ -187,13 +184,12 @@ p {
       border-radius: 10px;
       font-size: 20px;
       margin-top: 20px;
-      
 
       p {
         display: block;
         font-weight: 700;
       }
-      
+
       .selected {
         font-weight: 700;
         color: hsl(213, 96%, 18%);
@@ -219,7 +215,7 @@ p {
             width: 20px;
             margin: 0 7px;
             height: 20px;
-            background: hsl(217, 100%, 97%);;
+            background: hsl(217, 100%, 97%);
             border-radius: 50%;
             cursor: pointer;
             transition: 0.6s;
@@ -228,8 +224,7 @@ p {
 
         .toggle.year-plan .toggle-btn {
           left: 27px;
-        } 
-        
+        }
       }
     }
     // step-2 add-ons end
@@ -409,7 +404,6 @@ p {
   }
 }
 
-
 .disable {
   display: none;
 }
@@ -429,7 +423,7 @@ p {
     border-radius: 10px;
     height: 550px;
   }
-  
+
   #container {
     display: flex;
     height: 100%;
@@ -442,7 +436,7 @@ p {
     width: 35%;
     border-radius: 10px;
     position: relative;
-  
+
     .navigation {
       display: flex;
       flex-direction: column;
@@ -451,16 +445,16 @@ p {
       width: auto;
       position: absolute;
       left: 20px;
-  
+
       .navigation-items {
         display: flex;
         width: 100%;
-  
+
         .step-index {
           padding: 8px 13px 5px;
         }
       }
-  
+
       .description {
         display: block;
 
@@ -479,7 +473,6 @@ p {
     }
   }
 
-  
   #main {
     position: relative;
 
@@ -494,33 +487,29 @@ p {
       bottom: auto;
       border-radius: 0;
       margin: 30px 0 0 18px;
-  
-  
+
       // step-2 add-ons start
       #plan-container {
         display: flex;
         gap: 15px;
 
-        
-  
         .plan {
           flex-direction: column;
           margin-bottom: 10px;
           width: 150px;
           padding: 15px;
           align-items: flex-start;
-  
+
           img {
             width: 50px;
             margin-bottom: 40px;
           }
-  
         }
       }
-  
+
       .duration-selection {
         padding: 12px 10px 0;
-        
+
         .plan-selector {
           margin: 0 15px;
           display: inline;
@@ -528,13 +517,13 @@ p {
         }
       }
       // step-2 add-ons end
-  
+
       // step-3 add-ons start
       .add-ons-list {
         width: 480px;
       }
       // step-3 add-ons end
-  
+
       // step-4 add-ons start
       .finishing-up {
         background-color: hsl(217, 100%, 97%);
@@ -545,7 +534,7 @@ p {
       }
       // step-4 add-ons end
     }
-  
+
     // step-5 add-ons start
     #thanks-page {
       width: 500px;
@@ -553,5 +542,4 @@ p {
       padding: 80px 0 50px;
     }
   }
-  
 }
