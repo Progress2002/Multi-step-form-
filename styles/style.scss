@@ -413,3 +413,145 @@ p {
 .disable {
   display: none;
 }
+
+@media (min-width: 768px) {
+  body {
+    background-color: hsl(217, 100%, 97%);
+    height: 100vh;
+    display: flex;
+  }
+
+  #main-container {
+    width: 900px;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 10px;
+    height: 550px;
+  }
+  
+  #container {
+    display: flex;
+    height: 100%;
+  }
+
+  #sidebar {
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    background-size: contain;
+    height: auto;
+    width: 35%;
+    border-radius: 10px;
+    position: relative;
+  
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      position: absolute;
+      left: 20px;
+  
+      .navigation-items {
+        display: flex;
+        width: 100%;
+  
+        .step-index {
+          padding: 8px 13px 5px;
+        }
+      }
+  
+      .description {
+        display: block;
+
+        span {
+          color: hsl(228, 19%, 79%);
+          line-height: 1.5;
+          font-size: 13px;
+        }
+
+        p {
+          font-weight: 700;
+          letter-spacing: 2px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  
+  #main {
+    position: relative;
+
+    #page-2 {
+      margin-left: 25px;
+    }
+
+    .steps {
+      margin: auto;
+      padding: 0;
+      position: relative;
+      bottom: auto;
+      border-radius: 0;
+      margin: 30px 0 0 18px;
+  
+  
+      // step-2 add-ons start
+      #plan-container {
+        display: flex;
+        gap: 15px;
+
+        
+  
+        .plan {
+          flex-direction: column;
+          margin-bottom: 10px;
+          width: 150px;
+          padding: 15px;
+          align-items: flex-start;
+  
+          img {
+            width: 50px;
+            margin-bottom: 40px;
+          }
+  
+        }
+      }
+  
+      .duration-selection {
+        padding: 12px 10px 0;
+        
+        .plan-selector {
+          margin: 0 15px;
+          display: inline;
+          padding-bottom: 0;
+        }
+      }
+      // step-2 add-ons end
+  
+      // step-3 add-ons start
+      .add-ons-list {
+        width: 480px;
+      }
+      // step-3 add-ons end
+  
+      // step-4 add-ons start
+      .finishing-up {
+        background-color: hsl(217, 100%, 97%);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 10px;
+        width: 480px;
+      }
+      // step-4 add-ons end
+    }
+  
+    // step-5 add-ons start
+    #thanks-page {
+      width: 500px;
+      text-align: center;
+      padding: 80px 0 50px;
+    }
+  }
+  
+}
