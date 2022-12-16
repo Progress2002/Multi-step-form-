@@ -117,6 +117,7 @@ p {
   border: 1px solid #d6d9e6;
   border-radius: 5px;
   outline: none;
+  cursor: pointer;
 }
 
 #main .steps form input:hover {

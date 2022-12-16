@@ -4,6 +4,9 @@ const confirmBtn = document.querySelector('button.btn-confirm');
 const sideBarNav = document.querySelectorAll('div.step-index');
 const pages = document.querySelectorAll('div.steps');
 const footer = document.querySelector('div.main-footer');
+const extraServicesContainer = document.querySelector("ul.extra-services");
+const addOnsSelector = document.querySelectorAll('li.item');
+
 
 
 const sideBarNavigation = (index) => {
@@ -29,10 +32,27 @@ const sideBarNavigation = (index) => {
 
 }
 
+const displaySelectedAddOns = () => {
+  extraServicesContainer.innerHTML = '';
+  addOnsSelector.forEach((plan) => {
+    if(plan.classList.contains('checked')) {
+      let planName = plan.children[0].children[1].children[0].innerHTML;
+      let planPrice = plan.children[1].children[0].innerHTML;
+      extraServicesContainer.innerHTML += `
+        <li class="flex list">
+          <p>${planName}</p>
+          <p class="amount">${planPrice}</p>
+        </li>
+      `
+    }
+  })
+}
+
 let index = 0;
 export const forwardNavigation = () => {
   index++
   if(index === 3) {
+    displaySelectedAddOns()
     nextBtn.classList.add('disable');
     confirmBtn.classList.remove('disable');
   }
@@ -61,6 +81,12 @@ export const  conclusionPage = () => {
       page.classList.remove('disable');
     }
   })
-
   footer.classList.add('disable');
+}
+
+export const BackToPlanSelection = () => {
+  index = 1
+  sideBarNavigation(index)
+  nextBtn.classList.remove('disable');
+  confirmBtn.classList.add('disable');
 }
