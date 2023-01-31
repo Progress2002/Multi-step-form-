@@ -39,6 +39,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - SCSS
+- JavaScript
 - Mobile-first workflow
 
 
